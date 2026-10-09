@@ -1,38 +1,22 @@
-# Robo Girls — WordPress + WooCommerce concept prototype
+# Robo Girls — Brand-Accurate Storefront Prototype
 
-This is a static GitHub Pages prototype to present a possible redesign and online shopping experience before migrating the live Shopify store.
+This version has been reworked to use the owner's supplied brand-book wording, colours and imagery as the source of truth.
 
-## Included
-- Responsive storefront concept
-- Collection links and product category filters
-- Sort by price
-- Demo product cards and illustrative pricing
-- Shopping bag with quantity controls and subtotal
-- Newsletter interaction placeholder
-- README with launch and migration notes
+## Source material incorporated
+- The Glow with Courage Collection 2026 cover
+- Welcome to Robo Girls / founder and creative visionary page
+- Our Story / Our Purpose / Our Values
+- Empowerment T-Shirts
+- Everyday Collection
+- Hero Tracksuit Collection
+- Find Your Perfect Fit
+- Growing Together / Partnering for a Brighter Future
+- Let's Connect
+
+The supplied pages are used directly as visual assets rather than replacing the owner's photography or artwork with generated imagery.
 
 ## Important
-The current `robogirls.co.za` site could not be inspected by the preview-building environment. The products, prices, names and brand treatment in this prototype are illustrative demo content, not verified customer catalogue data. Replace them with the client's actual product photos, branding, descriptions, variants and prices after approval.
+No product prices, stock levels, variants or checkout rules have been invented in this version. The live catalogue will be populated after the owner confirms the Shopify catalogue.
 
-## Publish to GitHub Pages
-1. Create a public repository, e.g. `Luxolog/robogirls-store-demo`.
-2. Upload `index.html`, `style.css`, `app.js`, and this README to the repository root.
-3. Commit to `main`.
-4. Go to Settings → Pages.
-5. Choose Source `Deploy from a branch`, branch `main`, folder `/(root)`, and Save.
-6. When deployment completes, use the URL GitHub shows.
-
-## Proposed migration plan
-1. Audit current Shopify products, variants, collections, images, pages, blog content, customer/order data, SEO URLs, installed apps, shipping, taxes and payment settings.
-2. Back up/export the Shopify data and agree the new design with the owner.
-3. Set up WordPress + WooCommerce on GoDaddy hosting in a staging environment; keep Shopify live during the rebuild.
-4. Import products, categories, images and approved customer/order data; rebuild essential pages and policies.
-5. Configure a South African payment gateway, shipping/delivery rules, transactional emails, stock, taxes, security and backups.
-6. Preserve existing URLs where possible and add 301 redirects for changed URLs. Test mobile, checkout, emails, refunds and fulfilment.
-7. Obtain client approval, schedule cutover, update DNS only when ready, then monitor launch.
-
-GitHub Pages is for a static design demo only. It does not run WordPress, PHP, WooCommerce, a live database, or production checkout. The existing GoDaddy domain and hosting should remain untouched during the prototype stage.
-
-
-## Actual product photographs added
-The `assets/` folder contains the five photographs supplied for this prototype: black graphic T-shirt, charcoal tracksuit, grey tracksuit, teddy handbag and white graphic T-shirt. Product prices shown on the demo catalogue are illustrative only and must be replaced with the confirmed live prices.
+## Next phase
+When GoDaddy login details are available, use the approved prototype as the design reference and build the production site on WordPress + WooCommerce. Keep the current Shopify store live during the rebuild, migrate the approved catalogue and customer/order data where appropriate, configure South African payment and shipping, preserve SEO URLs where possible, test checkout and then cut over the domain.
