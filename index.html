@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Robo Girls fashion store concept — discover your next favourite look.">
+  <meta name="theme-color" content="#241c24">
+  <title>ROBO GIRLS — Your Style, Your Story</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="announcement">NEW SEASON ENERGY · DISCOVER YOUR NEXT FAVOURITE LOOK</div>
+  <header class="header">
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu">☰</button>
+    <a class="logo" href="#" aria-label="Robo Girls home"><span class="logo-symbol">R</span><span>ROBO<span class="logo-light">GIRLS</span><small>YOUR STYLE. YOUR STORY.</small></span></a>
+    <nav id="nav" aria-label="Main navigation"><a href="#shop">Shop all</a><a href="#collections">Collections</a><a href="#about">Our story</a></nav>
+    <button class="bag-button" id="openCart">Bag <span id="bagCount">0</span></button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <span class="eyebrow">THE NEW LOOKBOOK</span>
+        <h1>Style that<br><em>speaks for you.</em></h1>
+        <p>Discover the pieces that make getting dressed feel like you. Explore a fresh, curated shopping experience designed around your next favourite look.</p>
+        <div class="hero-ctas"><a class="btn btn-dark" href="#shop">Shop the collection <span>↗</span></a><a class="under-link" href="#collections">Explore collections</a></div>
+        <div class="hero-proof"><span>✳ Curated styles</span><span>✳ Easy browsing</span><span>✳ Made for your moment</span></div>
+      </div>
+      <div class="hero-visual" aria-label="Fashion editorial visual">
+        <div class="visual-backdrop"></div>
+        <div class="editorial-tile tile-one"><span>THE EVERYDAY EDIT</span><strong>Made to<br>move with you.</strong><i>RG / 01</i></div>
+        <div class="editorial-tile tile-two"><span>NEW SEASON</span><strong>Own<br>your look.</strong><i>RG / 02</i></div>
+        <div class="circle-stamp">YOUR<br>STYLE<br>ERA ↗</div>
+        <div class="hero-caption">ROBO GIRLS · STYLE NOTES VOL. 01</div>
+      </div>
+    </section>
+
+    <section class="benefit-bar">
+      <div><b>01</b><span><strong>Find your fit</strong><small>Browse by collection</small></span></div>
+      <div><b>02</b><span><strong>Shop with ease</strong><small>A smoother journey</small></span></div>
+      <div><b>03</b><span><strong>Come back for more</strong><small>Discover fresh arrivals</small></span></div>
+    </section>
+
+    <section class="collections section" id="collections">
+      <div class="section-head"><div><span class="eyebrow">A LITTLE SOMETHING FOR EVERY MOOD</span><h2>Find your <em>kind of style.</em></h2></div><a href="#shop" class="under-link">View all products ↗</a></div>
+      <div class="collection-grid">
+        <a class="collection-card collection-one" href="#shop" data-jump="Everyday"><span>01 / THE DAILY ROTATION</span><strong>Everyday<br>essentials</strong><i>Explore collection ↗</i></a>
+        <a class="collection-card collection-two" href="#shop" data-jump="Statement"><span>02 / MAKE AN ENTRANCE</span><strong>Statement<br>pieces</strong><i>Explore collection ↗</i></a>
+        <a class="collection-card collection-three" href="#shop" data-jump="Accessories"><span>03 / FINISHING TOUCHES</span><strong>Accessories<br>& extras</strong><i>Explore collection ↗</i></a>
+      </div>
+    </section>
+
+    <section class="shop section" id="shop">
+      <div class="section-head"><div><span class="eyebrow">THE ROBO EDIT</span><h2>Picked for <em>your wardrobe.</em></h2><p class="muted">A sample catalogue to demonstrate the proposed shopping experience. Replace these demo products with the client's actual Shopify catalogue before launch.</p></div><span class="result-count" id="resultCount">6 pieces</span></div>
+      <div class="shop-controls"><div class="filters" id="filters"><button class="filter active" data-filter="All">All pieces</button><button class="filter" data-filter="Everyday">Everyday</button><button class="filter" data-filter="Statement">Statement</button><button class="filter" data-filter="Accessories">Accessories</button></div><label class="sort-label">Sort <select id="sortSelect"><option value="featured">Featured</option><option value="low">Price: low to high</option><option value="high">Price: high to low</option></select></label></div>
+      <div class="product-grid" id="productGrid"></div>
+    </section>
+
+    <section class="story" id="about">
+      <div class="story-art"><div class="story-shape"><span>RG</span><small>STYLE IS PERSONAL</small></div><span class="story-note">THE ROBO GIRLS POINT OF VIEW</span></div>
+      <div class="story-copy"><span class="eyebrow">MORE THAN WHAT YOU WEAR</span><h2>Your style.<br><em>Your story.</em></h2><p>Robo Girls is about making room for personal style. This concept brings the brand into a clearer, more convenient online shopping experience — with room to grow as the collection grows.</p><a href="#shop" class="btn btn-light">Explore the edit <span>↗</span></a></div>
+    </section>
+
+    <section class="newsletter">
+      <div><span class="eyebrow">THE GOOD STUFF, FIRST</span><h2>Stay in the <em>loop.</em></h2><p>Show customers a place to hear about new drops, curated edits and special offers.</p></div>
+      <form id="newsletterForm"><label class="sr-only" for="email">Email address</label><input id="email" type="email" placeholder="Enter your email address" required><button class="btn btn-dark">Join the list ↗</button></form>
+      <small id="newsletterNote">Prototype only — connect a consent-based email marketing service before launch.</small>
+    </section>
+  </main>
+
+  <footer class="footer"><a class="logo footer-logo" href="#"><span class="logo-symbol">R</span><span>ROBO<span class="logo-light">GIRLS</span><small>YOUR STYLE. YOUR STORY.</small></span></a><div class="footer-nav"><a href="#shop">Shop</a><a href="#collections">Collections</a><a href="#about">Our story</a></div><p>Fashion for your next chapter.</p><small>© <span id="year"></span> Robo Girls · Concept prototype, not the live store.</small></footer>
+
+  <div class="overlay" id="overlay" hidden></div>
+  <aside class="cart" id="cart" aria-hidden="true" aria-label="Shopping bag">
+    <div class="cart-top"><div><span class="eyebrow">YOUR SELECTION</span><h2>Your bag <small id="cartCount">(0)</small></h2></div><button id="closeCart" class="close" aria-label="Close bag">×</button></div>
+    <div class="cart-lines" id="cartLines"></div>
+    <div class="empty-bag" id="emptyBag"><span>✳</span><h3>Your next favourite is out there.</h3><p>Add a piece to start your bag.</p><button class="btn btn-dark" id="continueShopping">Keep browsing</button></div>
+    <div class="cart-checkout" id="cartCheckout" hidden><div><span>Subtotal</span><strong id="subtotal">R0</strong></div><p>Delivery and payment are not connected in this prototype.</p><button class="btn btn-dark full" id="checkout">Preview checkout</button></div>
+  </aside>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="app.js"></script>
+</body>
+</html>
