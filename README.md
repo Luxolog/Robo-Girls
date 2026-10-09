@@ -32,3 +32,7 @@ The current `robogirls.co.za` site could not be inspected by the preview-buildin
 7. Obtain client approval, schedule cutover, update DNS only when ready, then monitor launch.
 
 GitHub Pages is for a static design demo only. It does not run WordPress, PHP, WooCommerce, a live database, or production checkout. The existing GoDaddy domain and hosting should remain untouched during the prototype stage.
+
+
+## Actual product photographs added
+The `assets/` folder contains the five photographs supplied for this prototype: black graphic T-shirt, charcoal tracksuit, grey tracksuit, teddy handbag and white graphic T-shirt. Product prices shown on the demo catalogue are illustrative only and must be replaced with the confirmed live prices.
