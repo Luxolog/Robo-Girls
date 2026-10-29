@@ -1,100 +1,126 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="Robo Girls — The Glow with Courage Collection 2026. Fashion that celebrates every girl.">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Shop Robo Girls — Glow with Courage. Fashion made for every girl to feel confident, comfortable and proud.">
+<meta name="theme-color" content="#ffb4d7">
 <title>ROBO GIRLS | Glow with Courage!</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="topbar">GLOW WITH COURAGE! <span>♥</span> DESIGNED FOR EVERY GIRL</div>
+<div class="announcement" aria-label="Brand announcements">
+  <button class="announcement-arrow" id="announcement-prev" aria-label="Previous announcement">‹</button>
+  <p id="announcement-message">⭐ GLOW WITH COURAGE — FASHION MADE FOR EVERY GIRL TO FEEL CONFIDENT, COMFORTABLE AND PROUD ⭐</p>
+  <button class="announcement-arrow" id="announcement-next" aria-label="Next announcement">›</button>
+</div>
 <header class="site-header">
-  <a href="#home" class="wordmark">ROBO <b>GIRLS</b><small>Glow with Courage!</small></a>
-  <button class="menu" id="menu" aria-label="Open menu">☰</button>
-  <nav id="nav"><a href="#collections">Collections</a><a href="#story">Our Story</a><a href="#fit">Find Your Fit</a><a href="#retail">Growing Together</a><a href="#contact">Let's Connect</a></nav>
-  <a class="shop-btn" href="#collections">SHOP</a>
+  <a href="#home" class="brand-mark" aria-label="Robo Girls home"><img src="assets/brand-book/brand-book-cover.png" alt="Robo Girls"></a>
+  <button class="menu" id="menu" aria-label="Open menu" aria-expanded="false">☰</button>
+  <nav id="nav" aria-label="Main navigation">
+    <a href="#home">Home</a><a href="#contact">Contact</a><a href="#tshirts">T-shirts</a><a href="#tracksuits">Tracksuits</a><a href="#dresses">Dresses</a><a href="#accessories">Accessories</a>
+  </nav>
+  <div class="header-tools">
+    <button aria-label="Search products" title="Search products" id="search-toggle"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"></circle><path d="m16 16 5 5"></path></svg></button>
+    <a href="#community" aria-label="Customer account" title="Customer account"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="3.5"></circle><path d="M4.5 21c.5-4.2 3.1-6.5 7.5-6.5s7 2.3 7.5 6.5"></path></svg></a>
+    <button id="cart-open" aria-label="Open demo shopping bag" title="Shopping bag"> <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l1 13H4L5 8Z"></path><path d="M9 8V6a3 3 0 0 1 6 0v2"></path></svg><span id="cart-count" class="cart-count">0</span></button>
+  </div>
 </header>
 
+<form class="search-panel" id="search-panel" role="search" hidden>
+  <label for="product-search">Search the collection</label>
+  <input id="product-search" type="search" placeholder="Try T-shirts or tracksuits">
+  <button type="button" id="search-close" aria-label="Close search">✕</button>
+</form>
+
 <main id="home">
-  <section class="hero">
-    <div class="hero-copy">
-      <p class="hero-kicker">THE GLOW WITH COURAGE COLLECTION 2026</p>
-      <h1>ROBO <span>GIRLS</span></h1>
-      <div class="hero-script">The Glow with Courage</div>
-      <p>Fashion that celebrates every girl.</p>
-      <a href="#collections">SHOP THE COLLECTION ↓</a>
+  <section class="hero-carousel" aria-label="Featured Robo Girls collection">
+    <div class="hero-slide active">
+      <img src="assets/brand-book/cover-collection.png" alt="Robo Girls Glow with Courage collection">
+      <a class="hero-cta" href="#glow-picks">Shop Now</a>
     </div>
-    <div class="hero-image"><img src="https://raw.githubusercontent.com/Luxolog/Robo-Girls/main/assets/brand-book/cover-collection.png" alt="Two girls wearing Robo Girls pink dresses."></div>
+    <div class="hero-slide">
+      <img src="assets/brand-book/hero-tracksuits.png" alt="Robo Girls Hero Tracksuit collection">
+      <a class="hero-cta" href="#tracksuits">Shop Tracksuits</a>
+    </div>
+    <div class="hero-slide">
+      <img src="assets/brand-book/empowerment-tees.png" alt="Robo Girls Empowerment T-shirts">
+      <a class="hero-cta" href="#tshirts">Shop T-shirts</a>
+    </div>
+    <button class="hero-arrow hero-prev" id="hero-prev" aria-label="Previous featured image">‹</button>
+    <button class="hero-arrow hero-next" id="hero-next" aria-label="Next featured image">›</button>
+    <div class="hero-dots" id="hero-dots" aria-label="Choose featured image"></div>
   </section>
 
-  <section class="welcome section split" id="story">
-    <div class="image-frame founder-frame"><img src="https://raw.githubusercontent.com/Luxolog/Robo-Girls/main/assets/brand-book/founder-story.png" alt="Robo Girls founder story imagery."></div>
-    <div class="copy">
-      <p class="kicker">A BRAND. A MOVEMENT. A FUTURE.</p>
-      <h2>Welcome to <span>ROBO GIRLS</span></h2>
-      <p>Robo Girls is more than clothing - it is a movement created to inspire, empower and celebrate every girl. We believe that every girl deserves to feel confident, beautiful and unstoppable in her own skin.</p>
-      <p>That is why we design inclusive, stylish and comfortable clothing that fits every shape, every size and every dream.</p>
-      <p>Our mission is simple: to remind girls that their glow comes from courage, kindness and believing in themselves.</p>
-      <p>This Brand Book is a reflection of who we are, what we stand for and the collections we are so proud to share with the world.</p>
-      <blockquote>“We don't just dress girls.<br>We empower them.”</blockquote>
+  <section class="products-section" id="glow-picks">
+    <div class="section-heading"><h1>⭐ GLOW GEAR PICKS</h1><a href="#all-products">View all</a></div>
+    <div class="product-grid" id="featured-products">
+      <article class="product-card" data-category="accessories" data-name="Pearl Bear Crossbody Handbag">
+        <a class="product-image" href="#accessories"><img src="assets/robo-girls-teddy-handbag.png" alt="Robo Girls Pearl Bear Crossbody Handbag"></a>
+        <div class="product-info"><a class="product-name" href="#accessories">ROBO GIRLS Pearl Bear Crossbody Handbag</a><p class="price">R 190.00</p><button class="add-button" data-product="Pearl Bear Crossbody Handbag" data-price="190">Add to bag</button></div>
+      </article>
+      <article class="product-card" data-category="tshirts" data-name="Empowerment T-Shirt">
+        <a class="product-image" href="#tshirts"><img src="assets/robo-girls-white-tee.png" alt="Robo Girls Empowerment T-Shirt in white"></a>
+        <div class="product-info"><a class="product-name" href="#tshirts">Empowerment T-Shirt</a><p class="price">R 150.00</p><button class="add-button" data-product="Empowerment T-Shirt" data-price="150">Add to bag</button></div>
+      </article>
+      <article class="product-card" data-category="tshirts" data-name="Empowerment T-Shirt Black">
+        <a class="product-image" href="#tshirts"><img src="assets/robo-girls-black-tee.png" alt="Robo Girls Empowerment T-Shirt in black"></a>
+        <div class="product-info"><a class="product-name" href="#tshirts">Empowerment T-Shirt - Black</a><p class="price">R 150.00</p><button class="add-button" data-product="Empowerment T-Shirt - Black" data-price="150">Add to bag</button></div>
+      </article>
+      <article class="product-card sold-out" data-category="dresses" data-name="Glow with Courage Girls Dress">
+        <span class="stock-badge">Sold out</span>
+        <a class="product-image" href="#dresses"><img src="assets/brand-book/everyday-collection.png" alt="Robo Girls Glow with Courage collection"></a>
+        <div class="product-info"><a class="product-name" href="#dresses">Glow with Courage Girls Dress | ROBO GIRLS Superhero Tulle Dress</a><p class="price">R 320.00</p><button class="add-button" disabled>Sold out</button></div>
+      </article>
+      <article class="product-card" data-category="tshirts" data-name="ROBO GIRLS 3-Pack Empowerment Tees">
+        <a class="product-image" href="#tshirts"><img src="assets/brand-book/empowerment-tees.png" alt="Robo Girls Empowerment T-shirts collection"></a>
+        <div class="product-info"><a class="product-name" href="#tshirts">ROBO GIRLS 3-Pack Empowerment Tees</a><p class="price">R 450.00</p><button class="add-button" data-product="ROBO GIRLS 3-Pack Empowerment Tees" data-price="450">Add to bag</button></div>
+      </article>
+      <article class="product-card" data-category="tracksuits" data-name="ROBO GIRLS Grey Tracksuits">
+        <a class="product-image" href="#tracksuits"><img src="assets/robo-girls-grey-tracksuit.png" alt="Robo Girls Grey Tracksuit"></a>
+        <div class="product-info"><a class="product-name" href="#tracksuits">ROBO GIRLS Grey Tracksuits</a><p class="price">R 320.00</p><button class="add-button" data-product="ROBO GIRLS Grey Tracksuits" data-price="320">Add to bag</button></div>
+      </article>
+    </div>
+    <p class="prototype-note">Storefront preview — add-to-bag is a demonstration only. Product details and availability must be confirmed before launch.</p>
+  </section>
+
+  <section class="category-band" id="all-products">
+    <div class="section-heading"><h2>SHOP BY CATEGORY</h2></div>
+    <div class="category-grid">
+      <a href="#tshirts" class="category-tile"><img src="assets/robo-girls-white-tee.png" alt=""><span>T-SHIRTS</span></a>
+      <a href="#tracksuits" class="category-tile"><img src="assets/robo-girls-grey-tracksuit.png" alt=""><span>TRACKSUITS</span></a>
+      <a href="#dresses" class="category-tile"><img src="assets/brand-book/everyday-collection.png" alt=""><span>DRESSES</span></a>
+      <a href="#accessories" class="category-tile"><img src="assets/robo-girls-teddy-handbag.png" alt=""><span>ACCESSORIES</span></a>
     </div>
   </section>
 
-  <section class="purpose section split" id="purpose">
-    <div class="copy">
-      <p class="kicker">OUR PURPOSE</p><h2>EVERY GIRL HAS A STORY.<br>THIS IS OURS.</h2>
-      <h3>OUR STORY</h3>
-      <p>Robo Girls was born from a simple but powerful belief: every girl deserves to feel seen, celebrated and confident.</p>
-      <p>As a mother, survivor and dreamer, our founder Maserame Mazibuko saw the need for clothing that not only looks beautiful but makes every girl feel like she belongs.</p>
-      <h3>OUR MISSION</h3>
-      <p>To inspire confidence, encourage self-love and empower girls to be unstoppable through inclusive, stylish and comfortable clothing made just for them.</p>
-      <div class="script">Glow with Courage!</div>
-      <h3>OUR PURPOSE</h3>
-      <p>We exist to empower girls through inclusive fashion that celebrates every shape, every size and every story.</p>
-      <p>We design with love, purpose and intention - because when girls feel good in what they wear, they glow with courage.</p>
-      <h3>OUR VALUES</h3>
-      <div class="values"><b>INCLUSIVE</b><span>Made for every girl, every shape and every size.</span><b>STYLISH</b><span>Trendy designs that girls love to wear.</span><b>EMPOWERING</b><span>Clothing that builds confidence and self-belief.</span><b>COURAGEOUS</b><span>Encouraging girls to dream big and be brave.</span></div>
-    </div>
-    <div class="image-frame tall"><img src="https://raw.githubusercontent.com/Luxolog/Robo-Girls/main/assets/brand-book/our-purpose.png" alt="Robo Girls girls wearing the collection."></div>
+  <section class="story-banner">
+    <p class="story-kicker">WHO IS ROBO GIRLS?</p>
+    <p>ROBO GIRLS is more than clothing — it's a movement created to inspire, empower and celebrate every girl. We believe every girl deserves to feel confident, beautiful and unstoppable in her own skin.</p>
+    <p>Robo Girls brings together fashion and purpose, creating clothing that inspires every girl to express herself, embrace who she is and Glow with Courage.</p>
   </section>
 
-  <section class="collections section" id="collections">
-    <div class="heading"><p class="kicker">THE GLOW WITH COURAGE COLLECTION</p><h2>Fashion that celebrates every girl.</h2></div>
-    <div class="collection-grid">
-      <article><img src="https://raw.githubusercontent.com/Luxolog/Robo-Girls/main/assets/robo-girls-black-tee.png" alt="Robo Girls Empowerment T-Shirts"><div><span>EMPOWERMENT T-SHIRTS</span><h3>BE CONFIDENT. BE KIND. BE YOU.</h3><p>Our Empowerment T-Shirts are designed to inspire confidence, self-love and courage in every girl. Made for everyday wear. Made to empower.</p><a href="#contact">ENQUIRE</a></div></article>
-      <article><img src="https://raw.githubusercontent.com/Luxolog/Robo-Girls/main/assets/robo-girls-white-tee.png" alt="Robo Girls Everyday Collection"><div><span>EVERYDAY COLLECTION</span><h3>Made for every day. Made for every girl.</h3><p>Comfort, confidence and style - easy to wear, easy to love, perfect for every moment, every girl, every day.</p><a href="#contact">ENQUIRE</a></div></article>
-      <article><img src="https://raw.githubusercontent.com/Luxolog/Robo-Girls/main/assets/robo-girls-grey-tracksuit.png" alt="Robo Girls Hero Tracksuit Collection"><div><span>HERO TRACKSUIT COLLECTION</span><h3>Comfort that empowers. Style that inspires.</h3><p>Made for movement, made for confidence, made for every girl who's ready to shine. Soft. Stylish. Strong - just like her.</p><a href="#contact">ENQUIRE</a></div></article>
-    </div>
-  </section>
-
-  <section class="fit section split" id="fit">
-    <div class="image-frame"><img src="https://raw.githubusercontent.com/Luxolog/Robo-Girls/main/assets/brand-book/fit-guide.png" alt="Robo Girls fit guide imagery."></div>
-    <div class="copy"><p class="kicker">FIND YOUR PERFECT FIT</p><h2>Different sizes. Same age. Every girl is unique.</h2>
-      <p>At Robo Girls, we celebrate every shape and size. Our clothes are designed to fit and flatter every girl, so she can feel confident, comfortable and free to shine.</p>
-      <p>Because every girl deserves to Glow with Courage!</p>
-      <h3>OUR FIT PROMISE</h3><ul><li>Designed for every body shape</li><li>Comfortable fit that allows you to move</li><li>Soft, breathable fabrics</li><li>Styles that make every girl feel confident</li></ul>
-      <div class="bold">BE BOLD.<br>BE BRAVE.<br><span>BE YOU.</span></div>
-    </div>
-  </section>
-
-  <section class="retail section split" id="retail">
-    <div class="copy"><p class="kicker">GROWING TOGETHER</p><h2>PARTNERING FOR A BRIGHTER FUTURE</h2>
-      <p>Robo Girls is ready to grow with leading South African retailers and bring affordable, inclusive fashion to more families across the country.</p>
-      <div class="retail-list"><div><b>PROUDLY SOUTH AFRICAN</b><span>Designed for South African girls and families.</span></div><div><b>INCLUSIVE SIZING</b><span>Regular Sizes and Comfort Sizes, because every girl deserves to feel confident.</span></div><div><b>AFFORDABLE FASHION</b><span>Stylish, quality clothing at accessible prices for everyday wear.</span></div><div><b>QUALITY YOU CAN TRUST</b><span>Comfort, durability and attention to detail in every piece.</span></div><div><b>RETAIL READY</b><span>Consistent collections, strong brand identity and reliable supply.</span></div></div>
-      <p class="closing">We look forward to the opportunity to grow together by bringing the Robo Girls collection to families across South Africa.</p>
-    </div>
-    <div class="image-frame"><img src="https://raw.githubusercontent.com/Luxolog/Robo-Girls/main/assets/brand-book/everyday-collection.png" alt="Robo Girls collection family imagery."></div>
-  </section>
-
-  <section class="contact section split" id="contact">
-    <div class="image-frame"><img src="https://raw.githubusercontent.com/Luxolog/Robo-Girls/main/assets/brand-book/brand-book-cover.png" alt="Robo Girls contact page imagery."></div>
-    <div class="copy"><p class="kicker">LET'S CONNECT</p><h2>WE WOULD LOVE TO HEAR FROM YOU!</h2>
-      <p>For enquiries, partnerships, wholesale opportunities or more information about Robo Girls, get in touch.</p>
-      <div class="contact-details"><a href="mailto:info@robogirls.co.za"><b>EMAIL</b><span>info@robogirls.co.za</span></a><a href="https://www.robogirls.co.za"><b>WEBSITE</b><span>www.robogirls.co.za</span></a><a href="tel:+27711973621"><b>PHONE</b><span>071 197 3621</span></a><a href="https://www.tiktok.com/@robo.girls"><b>TIKTOK</b><span>@robo.girls</span></a><a href="https://www.instagram.com/robogirls2026/"><b>INSTAGRAM</b><span>@robogirls2026</span></a></div>
-      <div class="script">We can't wait to grow together! ♥</div>
-    </div>
+  <section class="community" id="community">
+    <h2>Join the ROBO GIRLS Community</h2>
+    <form id="newsletter-form"><label class="visually-hidden" for="newsletter-email">Email address</label><input type="email" id="newsletter-email" placeholder="Email address" required><button type="submit" aria-label="Join community">→</button></form>
+    <p id="newsletter-message" role="status"></p>
   </section>
 </main>
-<footer><strong>ROBO GIRLS™</strong><span>Glow with Courage!</span><small>© 2026 Robo Girls</small></footer>
+
+<footer id="contact">
+  <div class="footer-brand"><strong>ROBO GIRLS</strong><span>Glow with Courage!</span></div>
+  <nav aria-label="Footer navigation"><a href="#home">Home</a><a href="#tshirts">T-shirts</a><a href="#tracksuits">Tracksuits</a><a href="#dresses">Dresses</a><a href="#accessories">Accessories</a><a href="mailto:info@robogirls.co.za">Contact</a></nav>
+  <p>For enquiries: <a href="mailto:info@robogirls.co.za">info@robogirls.co.za</a> · <a href="tel:+27711973621">071 197 3621</a></p>
+  <small>© 2026 ROBO GIRLS · <a href="#contact">Terms and Policies</a></small>
+</footer>
+
+<aside class="cart-drawer" id="cart-drawer" aria-label="Demonstration shopping bag" hidden>
+  <div class="cart-head"><h2>Your bag <span id="drawer-count">(0)</span></h2><button id="cart-close" aria-label="Close shopping bag">✕</button></div>
+  <div id="cart-items"><p>Your bag is empty.</p></div>
+  <div class="cart-total"><strong>Subtotal</strong><strong id="cart-total">R 0.00</strong></div>
+  <p class="prototype-note">Demo only — checkout and payments are not connected.</p>
+</aside>
+<div class="drawer-backdrop" id="drawer-backdrop" hidden></div>
 <script src="app.js"></script>
-</body></html>
+</body>
+</html>
