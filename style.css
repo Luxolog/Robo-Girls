@@ -122,3 +122,93 @@ footer nav a:hover,footer a:hover{text-decoration:underline;text-underline-offse
 @media(max-width:760px){html{scroll-padding-top:74px}.announcement{min-height:88px;grid-template-columns:32px minmax(0,1fr) 32px;padding:10px 7px;gap:5px}.announcement p{font-size:clamp(.83rem,3.2vw,1.2rem)}.announcement-arrow{font-size:1.65rem}.site-header{min-height:72px;padding:8px 4vw;gap:13px}.brand-mark{flex-basis:90px}.brand-robo{font-size:1.2rem}.brand-girls{font-size:1.12rem}.brand-mark small{font-size:.38rem}.menu{display:block;order:0;margin:0;padding:0}.site-header nav{display:none;position:absolute;top:100%;left:0;right:0;margin:0;padding:20px 6vw;background:#fff;box-shadow:0 12px 20px #0001;flex-direction:column;align-items:flex-start;gap:17px}.site-header nav.show{display:flex}.site-header nav a{font-size:1rem}.header-tools{margin-left:auto;gap:13px}.header-tools svg{width:21px;height:21px}.search-panel{top:72px;flex-wrap:wrap;padding:13px 4vw}.search-panel label{width:100%}.hero-carousel{height:480px}.hero-slide>img{object-position:center}.hero-shade{background:linear-gradient(90deg,#210f2fc9,#32172b46 100%)}.hero-copy{width:88%;padding:30px 0 40px 7vw}.hero-copy h1{font-size:clamp(3rem,11vw,5rem)}.hero-copy>p:not(.eyebrow){max-width:300px}.hero-arrow{width:32px;height:40px;font-size:1.6rem}.hero-prev{left:8px}.hero-next{right:8px}.promise-strip{justify-content:flex-start;overflow-x:auto;gap:24px;padding:13px 4vw;font-size:.76rem}.products-section,.category-band{padding:42px 4vw}.section-heading{align-items:end;margin-bottom:22px}.section-heading h2{font-size:1.7rem}.product-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:27px 12px}.product-name{font-size:.9rem}.price{font-size:.9rem}.product-category{font-size:.58rem}.add-button{font-size:.76rem;padding:9px}.category-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.category-tile{height:210px}.category-tile>span{left:12px;right:12px;bottom:12px;font-size:1rem}.story-section{grid-template-columns:1fr}.story-image{min-height:0;height:330px}.story-copy{padding:42px 7vw 48px}.story-copy h2{font-size:3.4rem}.community{grid-template-columns:1fr;gap:18px;padding:42px 5vw}.community h2{font-size:1.8rem}#newsletter-message{grid-column:1}.footer-top{grid-template-columns:1fr;gap:12px}.footer-top nav{grid-column:auto;justify-content:flex-start;gap:14px}.footer-bottom{flex-direction:column;gap:8px}.footer-bottom small{font-size:.78rem}}
 @media(max-width:420px){.hero-carousel{height:420px}.hero-copy h1{font-size:2.9rem}.hero-copy{width:94%;padding-left:8vw}.hero-copy .eyebrow{font-size:.62rem}.hero-cta{padding:12px 14px;gap:14px;font-size:.8rem}.product-grid{gap:24px 10px}.product-image{aspect-ratio:.72}.category-tile{height:175px}.section-heading h2{font-size:1.5rem}.text-link{font-size:.8rem}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important}}
+
+
+/* ROBO GIRLS storefront refresh — October 2026 */
+:root{--pink:#f8b8d2;--pink-strong:#d9367d;--pink-pale:#fff7fa;--plum:#401733;--ink:#29232a;--muted:#756a72;--gold:#f5c943;--line:#f0e3e9;--shadow:0 16px 42px #4c173c12}
+body{font-size:15px;background:#fff}
+.announcement{min-height:42px;padding:8px 2vw;grid-template-columns:34px minmax(0,1fr) 34px;background:#421a3a;color:#fff}
+.announcement p{font-size:.72rem;font-style:normal;letter-spacing:.08em;line-height:1.3}
+.announcement-arrow{font-size:1.4rem;color:#fff}
+.site-header{min-height:78px;padding:12px clamp(18px,5vw,76px);gap:clamp(16px,2.2vw,34px);box-shadow:0 4px 18px #3b183008}
+.brand-mark{flex-basis:118px}
+.brand-robo{font-size:1.55rem;color:#3e1738}
+.brand-girls{font-size:1.4rem;color:#d9367d}
+.brand-mark small{font-size:.47rem;letter-spacing:.1em}
+.site-header nav{gap:clamp(12px,1.8vw,26px)}
+.site-header nav a{font-size:.86rem;font-weight:800}
+.header-tools{gap:18px}
+.hero-carousel{height:clamp(390px,42vw,620px);background:#f6edf2}
+.hero-slide>img{object-fit:cover;object-position:center 36%}
+.hero-shade{background:linear-gradient(90deg,#271128d9 0%,#35182b9c 38%,#35182b18 76%)}
+.hero-copy{padding-left:clamp(28px,8vw,125px);width:min(720px,67%)}
+.hero-copy .eyebrow{letter-spacing:.19em}
+.hero-copy h1{font-size:clamp(3.4rem,6.5vw,6.6rem);line-height:.96}
+.hero-cta{border-radius:999px;padding:15px 23px;box-shadow:0 8px 24px #0002}
+.hero-arrow{border-radius:50%;width:44px;height:44px;font-size:1.8rem;display:grid;place-items:center}
+.promise-strip{padding:17px 20px;background:#fff9fb;gap:clamp(18px,5vw,70px);font-size:.78rem;letter-spacing:.025em}
+.products-section,.category-band{padding:clamp(42px,5vw,76px) clamp(18px,5vw,76px)}
+.section-heading{margin-bottom:30px}
+.section-heading h2{font-size:clamp(1.8rem,3vw,2.65rem)}
+.product-grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:36px 22px}
+.product-card{border:1px solid #f2e8ed;transition:box-shadow .25s,transform .25s;overflow:hidden}
+.product-card:hover{box-shadow:0 14px 34px #40173312;transform:translateY(-3px)}
+.product-image{aspect-ratio: .82;background:#fff;padding:10px}
+.product-image img{object-fit:contain;mix-blend-mode:multiply}
+.product-info{padding:14px 15px 17px}
+.product-category{letter-spacing:.14em;color:#b02e69}
+.product-name{font-size:.96rem;min-height:2.6em}
+.price{font-size:1rem;margin-top:10px}
+.add-button{border-radius:999px;padding:11px 14px;margin-top:14px;border-color:#e4c8d5}
+.add-button:hover:not(:disabled){background:#401733}
+.prototype-note{background:#fff7fa;border-left:3px solid #e7a1bf;padding:12px 15px;line-height:1.6}
+.category-band{background:#fff7fa}
+.category-grid{gap:18px}
+.category-tile{height:clamp(190px,23vw,330px);border-radius:5px}
+.category-tile img{object-fit:cover;object-position:center;background:#fff}
+.category-tile:after{inset:30% 0 0;background:linear-gradient(transparent,#271128b8)}
+.category-tile>span{left:20px;right:20px;bottom:18px;font-size:1.15rem}
+.story-section{background:#fff0f6}
+.story-image{background:#f9e6ee}
+.story-image img{object-fit:cover;object-position:center}
+.story-copy{padding-top:clamp(42px,6vw,82px);padding-bottom:clamp(42px,6vw,82px)}
+.story-copy h2 em{color:#d9367d}
+.dark-link{border-radius:999px;padding:14px 22px}
+.community{padding:clamp(40px,5vw,70px) clamp(18px,6vw,90px);background:#fff}
+#newsletter-form{border-radius:999px;overflow:hidden}
+#newsletter-form button{border-radius:50%;background:#401733;color:#fff;width:48px;height:48px;margin:6px}
+footer{padding:42px clamp(18px,5vw,76px) 20px;background:#291429}
+.footer-top{padding-bottom:30px}
+.cart-drawer{padding:28px;box-shadow:-18px 0 55px #1c0c1830}
+@media(max-width:1080px){.site-header{gap:15px}.site-header nav{gap:12px}.site-header nav a{font-size:.79rem}.brand-mark{flex-basis:100px}.product-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:760px){
+ .announcement{min-height:42px;grid-template-columns:26px minmax(0,1fr) 26px;padding:7px 5px}
+ .announcement p{font-size:.62rem;letter-spacing:.035em}
+ .site-header{min-height:70px;padding:9px 4vw;gap:12px}
+ .brand-mark{flex-basis:88px}
+ .brand-robo{font-size:1.18rem}.brand-girls{font-size:1.08rem}.brand-mark small{font-size:.36rem}
+ .menu{font-size:1.35rem}
+ .site-header nav{padding:22px 6vw;gap:18px}
+ .header-tools{gap:12px}
+ .hero-carousel{height:clamp(440px,120vw,570px)}
+ .hero-slide>img{object-position:58% center}
+ .hero-shade{background:linear-gradient(90deg,#261127d9 0%,#32172b92 58%,#32172b35 100%)}
+ .hero-copy{width:94%;padding:30px 0 46px 7vw}
+ .hero-copy h1{font-size:clamp(3.2rem,12vw,4.8rem)}
+ .hero-copy>p:not(.eyebrow){max-width:285px}
+ .promise-strip{gap:22px}
+ .products-section,.category-band{padding:42px 4vw}
+ .product-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:18px 10px}
+ .product-image{aspect-ratio:.78;padding:5px}
+ .product-info{padding:11px 10px 13px}
+ .product-name{font-size:.88rem;min-height:2.6em}
+ .add-button{font-size:.74rem;padding:10px}
+ .category-grid{gap:10px}
+ .category-tile{height:clamp(170px,48vw,230px);border-radius:4px}
+ .category-tile>span{left:12px;right:12px;bottom:12px;font-size:.95rem}
+ .story-image{height:310px}
+ .story-copy{padding:38px 7vw 44px}
+ .community{padding:42px 5vw}
+ .footer-top{gap:16px}
+}
+@media(max-width:390px){.header-tools{gap:9px}.header-tools svg{width:19px;height:19px}.hero-carousel{height:430px}.hero-copy h1{font-size:2.9rem}.section-heading h2{font-size:1.45rem}.product-name{font-size:.82rem}}
