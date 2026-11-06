@@ -1,22 +1,24 @@
-# Robo Girls — Brand-Accurate Storefront Prototype
+# RoboGirls — Storefront Rebuild
 
-This version has been reworked to use the owner's supplied brand-book wording, colours and imagery as the source of truth.
+A preview-first storefront refresh for RoboGirls. Work is isolated on the `robogirls-rebuild-phase-1` branch; the live Shopify storefront is not changed by this repository.
 
-## Source material incorporated
-- The Glow with Courage Collection 2026 cover
-- Welcome to Robo Girls / founder and creative visionary page
-- Our Story / Our Purpose / Our Values
-- Empowerment T-Shirts
-- Everyday Collection
-- Hero Tracksuit Collection
-- Find Your Perfect Fit
-- Growing Together / Partnering for a Brighter Future
-- Let's Connect
+## Brand direction
+- Pink, deep purple, white, with gold accents
+- Playful and polished, designed to appeal to children and parents
+- Product photos supplied by the owner should remain the authentic catalogue imagery
+- Campaign background artwork is decorative only; no copy is baked into it
 
-The supplied pages are used directly as visual assets rather than replacing the owner's photography or artwork with generated imagery.
+## Preview
+GitHub Pages preview: https://luxolog.github.io/Robo-Girls/
 
-## Important
-No product prices, stock levels, variants or checkout rules have been invented in this version. The live catalogue will be populated after the owner confirms the Shopify catalogue.
+## Current scope
+- Responsive storefront interface and sample product catalogue
+- Front-end category filters, search, and preview bag interactions
+- Owner price-management interface currently stores preview edits in the browser only
 
-## Next phase
-When GoDaddy login details are available, use the approved prototype as the design reference and build the production site on WordPress + WooCommerce. Keep the current Shopify store live during the rebuild, migrate the approved catalogue and customer/order data where appropriate, configure South African payment and shipping, preserve SEO URLs where possible, test checkout and then cut over the domain.
+## Not connected yet
+- Secure owner authentication and persistent product pricing API
+- WooCommerce/Shopify product sync, payment checkout, fulfilment, or live customer data
+- Newsletter provider
+
+These limitations are intentionally disclosed in the preview UI. Production launch requires backend integration and end-to-end testing.
